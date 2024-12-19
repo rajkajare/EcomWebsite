@@ -2,9 +2,40 @@
 
 <html>
     <head>
-        <title>category page</title>
+        <title>Category Page</title>
+        <link rel="stylesheet" href="./styles/category.css">
     </head>
+
+
     <body>
+        <div class="topbar">
+            <div class="left_section">
+                <button class="button_topbar">SHOP</button>
+                <button class="button_topbar">ABOUT</button>
+                <div class="search_icon"></div>
+            </div>
+            <div class="middle_section">
+                <h2>THE FIGMA STORE</h2>
+            </div>
+            <div class="right_section">
+                <div class="profile_icon"></div>
+                <select class="button_topbar">
+                    <option selected value="1">UNITED STATES</option>
+                    <option value="2">INDIA</option>
+                    <option value="3">CHINA</option>
+                    <option value="4">RUSSIA</option>
+                </select>
+                <button class="button_topbar">CART 0</button>
+            </div>
+        </div>
+
+        <h1 class="category_name">CATEGORY WOMEN'S</h1>
+
+        <div class="products_grid"></div>
+        <div class="footer"></div>
+        <div class="box_message_icon">
+            <div></div>
+        </div>
         <script type="module" src="./scripts/category.js"></script>
     </body>
 </html>

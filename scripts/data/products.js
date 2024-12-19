@@ -198,4 +198,4 @@ let EcommerceData = `{
     ]
   }`
 
-export let products = JSON.parse(EcommerceData); 
+export let products = JSON.parse(EcommerceData).products[0]; 
