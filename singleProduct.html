@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title>Category Page</title>
-        <link rel="stylesheet" href="./styles/category.css">
+        <title>SinglProduct Page</title>
+        <link rel="stylesheet" href="./styles/singleProduct.css">
     </head>
-
-
     <body>
         <div class="topbar">
             <div class="left_section">
@@ -29,13 +26,28 @@
             </div>
         </div>
 
-        <h1 class="category_name"></h1>
+        <div class="box_product_container">
+            <div class="box_small_images"></div>
+            <div class="box_product_thumbnail"></div>
+            <div class="box_product_details">
+                <div>
+                    <p class="component_name"></p>
+                </div>
+                <p class="product_name"></p>
+                <div class="box_quantity">
+                    <button class="js-subtract">-</button>
+                    <p class="js-show-quantity"></p>
+                    <button class="js-add">+</button>
+                </div>
+                <button class="button_cart">ADD TO CART</button>
+                <p class="product_description"></p>
+            </div>
+        </div>
 
-        <div class="products_grid"></div>
         <div class="footer"></div>
         <div class="box_message_icon">
             <div></div>
         </div>
-        <script type="module" src="./scripts/category.js"></script>
+        <script type="module" src="./scripts/singleProduct.js"></script>
     </body>
 </html>

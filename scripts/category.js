@@ -1,4 +1,5 @@
-import {get_category} from '../scripts/data/categoryData.js'
+import {category, get_category} from './data/categoryData.js'
+import {set_selected_product_id} from './data/singleProductData.js'
 
 
 
@@ -12,8 +13,8 @@ function render_category_page() {
         productGridHtml += `
             <div class="product_container">
                 <div class="box_product_thumbnail">
-                    <a href="product.html">
-                        <img class="product_thumbnail" src=${product.thumbnail}>
+                    <a href="singleProduct.html">
+                        <img class="product_thumbnail" src=${product.thumbnail} data-product-id="${product.id}">
                     </a>
                 </div>
                 <div class="box_product_details">
@@ -28,7 +29,19 @@ function render_category_page() {
             </div>
         `
     })
+    document.querySelector('.category_name').innerHTML = `CATEGORY ${category}`;
     document.querySelector('.products_grid').innerHTML = productGridHtml;
+
+
+
+
+    document.querySelectorAll('.product_thumbnail')
+        .forEach((imgLink) => {
+            let {productId} = imgLink.dataset;
+            imgLink.addEventListener('click', () => {
+                set_selected_product_id(productId);
+            })
+        })
 }
 
 render_category_page();
