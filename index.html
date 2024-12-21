@@ -7,15 +7,57 @@
         <link rel="stylesheet" href="./styles/index.css">
     </head>
     <body>
-        <a href="category.html">
-            <button class="mens">Mens</button>
-        </a>
-        <a href="category.html">
-            <button class="womens">Womens</button>
-        </a>
-        <a href="category.html">
-            <button class="accessories">Accessories</button>
-        </a>
+        <div class="box_header">
+            <div class="box_header_slideBar">
+                <div class="box_header_slideBar_elements"></div>
+            </div>
+        </div>
+
+        <div class="topbar">
+            <div class="left_section">
+                <button class="button_topbar">SHOP</button>
+                <button class="button_topbar">ABOUT</button>
+                <div class="search_icon"></div>
+            </div>
+            <div class="middle_section">
+                <h2>THE FIGMA STORE</h2>
+            </div>
+            <div class="right_section">
+                <div class="profile_icon"></div>
+                <select class="button_topbar">
+                    <option selected value="1">UNITED STATES</option>
+                    <option value="2">INDIA</option>
+                    <option value="3">CHINA</option>
+                    <option value="4">RUSSIA</option>
+                </select>
+                <button class="button_topbar">CART 0</button>
+            </div>
+        </div>
+
+        <div class="box_category">
+            <div class="box_men_category">
+                <a href="category.html">
+                    <img class="mens" src="https://store.figma.com/cdn/shop/products/Figma-Store-1096_1000x.jpg?v=1636599836">
+                </a>                
+                <p class="text_category">C A T E G O R Y</p>
+                <p class="text_category_name">MENS</p>
+            </div>
+            <div class="box_women_category">
+                <a href="category.html">
+                    <img class="womens" src="https://store.figma.com/cdn/shop/products/figma-store_framework-tee_01_1000x.jpg?v=167051545">
+                </a>
+                <p class="text_category">CATEGORY</p>
+                <p class="text_category_name">WOMENS</p>
+            </div>
+            <div class="box_accessories_category">
+                <a href="category.html">
+                    <img class="accessories" src="https://store.figma.com/cdn/shop/products/Figma-Store-3504_1000x.jpg?v=1636599916">
+                </a>
+                <p class="text_category">CATEGORY</p>
+                <p class="text_category_name">ACCESSORIES</p>
+            </div>
+        </div>
+
         <div class="footer">
             <div class="box_sub_footer">
                 <div class="box_logo">
@@ -51,6 +93,7 @@
                     </button>
                 </div>
             </div>
+
             <div class="slide_bar">
                 <div class="slide_bar_elements">
                     <p>FIGMA'S</p>
@@ -120,6 +163,11 @@
                 </div>
             </div>
         </div>
+
+        <button class="box_message_icon">
+            <i class="fa-solid fa-comment-dots fa-flip-horizontal fa-2xl" style="color: #000000;"></i>
+        </button>
+
         <script type="module" src="./scripts/index.js"></script>
     </body>
 </html>
